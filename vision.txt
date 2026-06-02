@@ -1,0 +1,30 @@
+Project Goal: Based on the Ramkishore_Namala_AIML_Resume.pdf resume Build a modern, highly responsive developer portfolio website using Next.js (App Router), Tailwind CSS, and TypeScript. The site is for an experienced AI Software Development Engineer 
+
+Architecture & Database Setup Requirements:
+
+Integrate @supabase/supabase-js. Set up a utility file (utils/supabase.ts) to initialize the client using environment variables.
+
+Create a SQL schema for two Supabase tables: projects (title, description, tech_stack array, github_url, live_url) and contact_messages (name, email, message, created_at).
+
+Write a Next.js Server Action to handle the "Contact Me" form submission securely to the Supabase database.
+
+Page Structure & UI Requirements:
+Build the following sections on a scrolling single-page layout (or separate routes, whichever is cleaner):
+
+Hero Section: A high-impact 3-sentence summary emphasizing 4 years of real-world AI industry experience, building scalable models, and core expertise in Python and Java.
+
+Interactive Skills Section: Instead of a static list, create a React component that utilizes d3.js to render an interactive node-graph or bubble chart displaying my technical stack (Python, Java, NLP, GenAI, D3.js, Next.js, etc.).
+
+Experience Timeline: A clean, reverse-chronological timeline component detailing my professional experience.
+
+Projects Gallery: A grid mapping over the data fetched from the Supabase projects table. Each card should have hover effects using standard Tailwind classes.
+
+Contact Section: A working form connecting to the Server Action created earlier.
+
+Execution Instructions:
+
+Use the lucide-react library for all icons.
+
+Keep the UI dark-themed, sleek, and Dynamic resembling a high-end AI product interface .
+
+Please plan the file structure first and ask for my approval. Once approved, generate the code file by file, starting with the Supabase utility and schema.
